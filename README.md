@@ -37,7 +37,7 @@ Migrations are the glue b/t the Django models and the SQL underneath them. The d
 ```
 ./manage.py showmigrations
 ```
-Will show what migrations exists and if they've been applied. 
+Will show what migrations exists and if they've been applied. 'X' in the box means they've been applied.
 ```
 admin
  [ ] 0001_initial
