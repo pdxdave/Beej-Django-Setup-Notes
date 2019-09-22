@@ -23,3 +23,14 @@ django-admin startapp notes
 ```
 
 ### Start the server
+In the root folder there will be a file called manage.py.  Make sure you're in the root folder and type:
+```
+python manage.py runserver
+```
+It's likely you'll get a message regardging a bunch of unapplied migrations.  Stop the server. Run the the following:
+```
+python manage.py migrate
+```
+
+#### Migrations
+Migrations are the glue b/t the Django models and the SQL underneath them. The data in Django will be represented in a SQL database.  We need SQL commands to set that database up based on what our models look like. The models will be objects with fields in them.  The fields in the model get transalted by Django into SQL statements that build tables. The fields that are objects become columns in our table. 
