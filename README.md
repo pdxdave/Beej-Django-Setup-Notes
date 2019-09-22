@@ -90,7 +90,13 @@ INSTALLED_APPS = [
 ]
 ```
 ### Setup Migrations
-Finally the migrations need to be setup.  In the root folder type:
+Finally the migrations need to be setup.  It will appear in the notes > migrations folder. In the root folder type:
 ```
 ./manage.py makemigrations
+```
+You'll get an Operations to perform notification with the notes listed.
+
+Next, type in the following to migrate the notes:
+```
+./manage.py migrate
 ```
