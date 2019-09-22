@@ -17,7 +17,7 @@ django-admin startproject djorg .
 ```
 
 ### Create an app    
-Again, this inside of the project.  The app is called notes. Make sure you're inside of the djorg folder.  That's your project folder.
+Again, this inside of the project.  The app is called notes. Make sure you're in the root folder. This does not go inside the djorg folder.
 ```
 django-admin startapp notes
 ```
