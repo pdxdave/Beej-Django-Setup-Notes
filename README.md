@@ -109,4 +109,4 @@ And finally run the server again to make sure everything is working:
 In djorg > settings.py there is a SECRET_KEY.  It shouldn't be kept here. It is advised to use an .env file to hide the key.
 
 
-## Admin Interface and SQL
+# Admin Interface and SQL
