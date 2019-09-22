@@ -1,4 +1,4 @@
-# Beej-Django-Setup-Notes
+# Beej-Django-Setup-Modules-Migrations
 Beej Django Setup Notes
 
 ### Setup
@@ -100,3 +100,13 @@ Next, type in the following to migrate the notes:
 ```
 ./manage.py migrate
 ```
+And finally run the server again to make sure everything is working:
+```
+./manage.py runserver
+```
+#### End of lecture comments
+
+In djorg > settings.py there is a SECRET_KEY.  It shouldn't be kept here. It is advised to use an .env file to hide the key.
+
+
+## Admin Interface and SQL
