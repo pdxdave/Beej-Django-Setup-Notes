@@ -89,3 +89,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 ```
+### Setup Migrations
+Finally the migrations need to be setup.  In the root folder type:
+```
+./manage.py makemigrations
+```
