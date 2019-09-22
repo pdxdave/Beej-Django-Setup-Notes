@@ -61,3 +61,31 @@ contenttypes
 sessions
  [ ] 0001_initial
  ```
+
+### Create a model
+In the Notes folder (e.g.,our app) look for the models.py file.  The model will represent our data.    
+```
+from django.db import models
+from uuid import uuid4
+
+# Create your models here.
+
+class Note(models.Model):  # the . means inheritance.
+    id = models.UUIDField(primary_key=true, default=uuid4, editable=False) # creates unique id
+    title = models.Charfied(max_length=200)
+    content = models.TextField(blank=True)
+```
+
+#### Tell Django what apps are installed
+Now we need to tell Django what apps are installed. This is done in the project folder inside of the settings.py file.  In the INSTALLED_APPS array add 'notes'
+```
+INSTALLED_APPS = [
+    'notes',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
